@@ -9,6 +9,9 @@ on:
     branches:
       - main
 
+# on:
+#   schedule:
+#     - cron:  '*/15 * * * *'
 
 jobs:
   build:
@@ -36,4 +39,4 @@ jobs:
         coverage report
     - name: Django Testing
       run: |
-        python manage.py test
+        python3 manage.py test
